@@ -1,30 +1,43 @@
-# Tic Tac Toe Game in C++ (OOP-Based with AI)
+# Tic Tac Toe Game in C++ (OOP-Based with AI and SFML GUI)
 
-Welcome to this simple terminal-based Tic Tac Toe game built using Object-Oriented Programming (OOP) principles in C++. This project demonstrates core OOP concepts and includes an intelligent AI opponent using the Minimax algorithm.
+Welcome to this Tic Tac Toe game implemented in C++ using Object-Oriented Programming (OOP) principles. This project features both a command-line and a graphical user interface powered by SFML, alongside an intelligent AI opponent that uses the Minimax algorithm.
 
 ## Features
 
-- Two-player mode (X vs O)
-- Single-player mode against AI
-- Intuitive terminal interface
-- Input validation and turn-based logic
-- Win, draw, and invalid move detection
-- Modular design with clear separation of concerns
+* Two-player mode (X vs O)
+* Single-player mode against AI with Minimax algorithm
+* Graphical interface with SFML for an interactive experience
+* Intuitive mouse-based input handling
+* Real-time visual feedback for moves and game status
+* Input validation, turn-based logic, and game outcome detection (win/draw)
+* Modular design with clean separation of logic and rendering
+* Smooth AI move animation and delay for natural gameplay pacing
 
 ## Project Structure
 
-- **Game.h** – Controls the main game loop, player turns, and mode selection
-- **Player.h** – Manages player data and human player inputs
-- **AIPlayer.h** – Implements AI logic with Minimax algorithm
-- **Board.h** – Manages the game board state and rendering
+* **Game.h** – Manages the main game loop, event handling, and game state
+* **Player.h** – Handles player data and human inputs
+* **AIPlayer.h** – Contains AI logic based on the Minimax algorithm
+* **Board.h** – Maintains the board state and handles rendering of grid and symbols using SFML
 
 ## How to Compile and Run
 
 ### Requirements
 
-- A C++ compiler supporting C++11 or later (e.g., g++, clang++)
-- Terminal or command prompt
+* C++ compiler supporting C++11 or later (e.g., g++, clang++)
+* SFML library installed (version 2.5 or later recommended)
+* Compatible terminal and graphical environment (for SFML window)
 
 ### Compilation
 
-Compile all source files together. Example using g++
+Compile all source files and link SFML libraries. Example using g++:
+
+```bash
+g++ main.cpp Game.cpp Player.cpp AIPlayer.cpp Board.cpp -o TicTacToe -lsfml-graphics -lsfml-window -lsfml-system
+```
+
+### Running
+
+Run the executable to launch the graphical Tic Tac Toe game window. Use mouse clicks to make moves, and play against another human or the AI.
+
+---
