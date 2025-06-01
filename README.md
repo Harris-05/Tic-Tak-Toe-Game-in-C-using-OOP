@@ -33,7 +33,7 @@ Welcome to this Tic Tac Toe game implemented in C++ using Object-Oriented Progra
 Compile all source files and link SFML libraries. Example using g++:
 
 ```bash
-g++ main.cpp Game.cpp Player.cpp AIPlayer.cpp Board.cpp -o TicTacToe -lsfml-graphics -lsfml-window -lsfml-system
+g++ main.cpp -o TicTacToe -lsfml-graphics -lsfml-window -lsfml-system
 ```
 
 ### Running
